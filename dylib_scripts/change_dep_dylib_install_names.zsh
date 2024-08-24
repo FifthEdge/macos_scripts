@@ -3,6 +3,7 @@
 # Check if arguments are provided
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <FRAMEWORKS_DIR> <NEW_INSTALL_NAME_DIR>"
+    echo "Example ./change_install_name.sh \"MyApp.app/Contents/Frameworks\" \"@executable_path/../Frameworks\""
     exit 1
 fi
 
